@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Sergei Pozdeev](https://up.htmlacademy.ru/adaptive/31/user/2416243).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
 
 ---
 
