@@ -4,16 +4,20 @@
   <meta charset="UTF-8">
   <title>Cat Energy - Главная</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/icon_180.png">
+  <link rel="icon" type="image/svg+xml" sizes="32x32" href="favicons/icon_32.svg">
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 <body class="page__body">
 <header class="main-header">
   <a class="main-header__logo" href="#">
-    <img class="main-header__logo-image" src="images/#" width="33" height="38" alt="Cat Logo">
-    <img class="main-header__logo-text" src="images/#" width="101" height="18" alt="Cat Energy">
+    <img class="main-header__logo-image" width="33" height="38" src="images/#" alt="Cat Logo">
+    <img class="main-header__logo-text" width="101" height="18" src="images/#" alt="Cat Energy">
   </a>
-  <nav class="navigation">
+  <nav class="main-header__navigation navigation">
     <button class="navigation__toggle" type="button">
       <span class="visually-hidden">
         Открыть меню
@@ -46,7 +50,11 @@
     <p class="hero__text">
       Занялся собой? Займись котом!
     </p>
-    <img class="hero__image" src="images/mobile/#" width="280" height="270" alt="Корм Cat Energy Pro с курицей">
+    <picture>
+      <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/desktop/hero-can@1x.png 1x, images/desktop/hero-can@2x.png 2x">
+      <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/tablet/hero-can@1x.png 1x, images/tablet/hero-can@2x.png 2x">
+      <img class="hero__image" width="280" height="270" src="images/mobile/hero-can@1x.png" srcset="images/mobile/hero-can@2x.png 2x" alt="Корм Cat Energy Pro с курицей">
+    </picture>
     <a class="hero__button button" href="#">
       Подобрать программу
     </a>
@@ -156,8 +164,14 @@
   <section class="slider">
     <div class="slider__wrapper">
       <h2 class="visually-hidden">Сравнение до и после</h2>
-      <img class="slider__item" src="images/mobile/#" width="280" height="256" alt="До, упитанный кот">
-      <img class="slider__item" src="images/mobile/#" width="280" height="256" alt="После, худой кот">
+      <picture>
+        <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/desktop/cat_before@1x.png 1x, images/desktop/cat_before@2x.png 2x">
+        <img class="slider__item" width="280" height="256" src="images/mobile/cat_before@1x.png" srcset="images/mobile/cat_before@2x.png 2x" alt="До, упитанный кот">
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/desktop/cat_after@1x.png 1x, images/desktop/cat_after@2x.png 2x">
+        <img class="slider__item" width="280" height="256" src="images/mobile/cat_after@1x.png" srcset="images/mobile/cat_after@2x.png 2x" alt="После, худой кот">
+      </picture>
       <button class="slider__button" type="button">
         <span class="visually-hidden">
           Потяните влево вправо, чтобы увидеть разницу до и после
@@ -177,7 +191,11 @@
     <address class="location__address">
       ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
     </address>
-    <img class="location__image" src="images/mobile/#" width="320" height="362" alt="Карта с отмеченной локацией" loading="lazy">
+    <picture>
+      <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpg" srcset="images/desktop/map@1x.jpg 1x, images/desktop/map@2x.jpg 2x">
+      <source media="(min-width: 768px)" width="768" height="400" type="image/jpg" srcset="images/tablet/map@1x.jpg 1x, images/tablet/map@2x.jpg 2x">
+      <img class="location__image" width="320" height="362" src="images/mobile/map@1x.jpg" srcset="images/mobile/map@2x.jpg 2x" alt="Карта с отмеченной локацией" loading="lazy">
+    </picture>
   </div>
   <div class="footer-bottom">
     <a class="footer-bottom__logo" href="index.html" aria-label="Ведет на главную страницу">
