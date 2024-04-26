@@ -1,0 +1,38 @@
+.stats {
+  background-color: $bg-color-forth;
+}
+
+.stats__title {
+  margin: 0 0 40px;
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $text-color-secondary;
+}
+
+.stats__info {
+  margin: 0 0 20px;
+}
+
+.stats__weight {
+  font-family: $font-secondary;
+  font-size: 24px;
+  line-height: 24px;
+  color: $text-color-secondary;
+  text-transform: uppercase;
+}
+
+.stats__text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.stats__price {
+  margin: 0 0 20px;
+  font-family: $font-secondary;
+  line-height: 20px;
+  color: $text-color-secondary;
+  text-transform: uppercase;
+}

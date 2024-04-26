@@ -1,0 +1,19 @@
+.offer {
+  padding: 43px 58px;
+  min-height: 290px;
+  background-image: linear-gradient(rgba($bg-color-primary, 0.85), rgba($bg-color-primary, 0.85)), url("../../images/mobile/offer@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $bg-color-primary;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba($bg-color-primary, 0.85), rgba($bg-color-primary, 0.85)), url("../../images/mobile/offer@2x.jpg");
+  }
+}
+
+.offer__text {
+  margin: 0;
+  line-height: 20px;
+  color: $text-color-third;
+}

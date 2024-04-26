@@ -1,0 +1,33 @@
+.hero {
+  position: relative;
+  font-family: $font-secondary;
+  color: $text-color-third;
+
+  &::before {
+    position: absolute;
+    min-width: 100%;
+    min-height: 302px;
+    background-image: linear-gradient(rgba($bg-color-primary, 0.85), rgba($bg-color-primary, 0.85)), url("../../images/mobile/hero-background@1x.jpg"), linear-gradient(to right, $additional-color-3, $additional-color-4);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: contain;
+    background-color: $bg-color-primary;
+    z-index: -1;
+    content: "";
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba($bg-color-primary, 0.85), rgba($bg-color-primary, 0.85)), url("../../images/mobile/hero-background@2x.jpg"), linear-gradient(to right, $additional-color-3, $additional-color-4);
+    }
+  }
+}
+
+.hero__title {
+  margin: 0 0 25px;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.hero__text {
+  margin: 0 0 29px;
+  text-transform: uppercase;
+}

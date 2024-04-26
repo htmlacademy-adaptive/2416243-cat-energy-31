@@ -1,0 +1,25 @@
+.extra-card__link {
+  text-decoration: none;
+}
+
+.extra-card__title {
+  margin: 0 0 13px;
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $additional-color-2;
+  text-transform: uppercase;
+}
+
+.extra-card__info {
+  margin: 0 0 15px;
+}
+
+.extra-card__parameter {
+  line-height: 14px;
+}
+
+.extra-card__price {
+  line-height: 14px;
+}

@@ -23,7 +23,7 @@
         Открыть меню
       </span>
     </button>
-    <ul class="navigation__list list-reset">
+    <ul class="navigation__list">
       <li class="navigation__item">
         <a class="navigation__link" href="index.html">
           Главная
@@ -84,7 +84,7 @@
               700&nbsp;₽
             </dd>
           </dl>
-          <a class="product-card__button button" href="#">
+          <a class="product-card__button button button--primary" href="#">
             Заказать
           </a>
         </li>
@@ -120,7 +120,7 @@
               1000&nbsp;₽
             </dd>
           </dl>
-          <a class="product-card__button button" href="#">
+          <a class="product-card__button button button--primary" href="#">
             Заказать
           </a>
         </li>
@@ -156,7 +156,7 @@
               700&nbsp;₽
             </dd>
           </dl>
-          <a class="product-card__button button" href="#">
+          <a class="product-card__button button button--primary" href="#">
             Заказать
           </a>
         </li>
@@ -192,7 +192,7 @@
               1000&nbsp;₽
             </dd>
           </dl>
-          <a class="product-card__button button" href="#">
+          <a class="product-card__button button button--primary" href="#">
             Заказать
           </a>
         </li>
@@ -228,7 +228,7 @@
               400&nbsp;₽
             </dd>
           </dl>
-          <a class="product-card__button button" href="#">
+          <a class="product-card__button button button--primary" href="#">
             Заказать
           </a>
         </li>
@@ -264,7 +264,7 @@
               700&nbsp;₽
             </dd>
           </dl>
-          <a class="product-card__button button" href="#">
+          <a class="product-card__button button button--primary" href="#">
             Заказать
           </a>
         </li>
@@ -300,18 +300,18 @@
               500&nbsp;₽
             </dd>
           </dl>
-          <a class="product-card__button button" href="#">
+          <a class="product-card__button button button--primary" href="#">
             Заказать
           </a>
         </li>
         <li class="main-products__item product-card">
-          <p class="product-card__title-more">
+          <p class="product-card__title product-card__title--more">
             Показать еще 100500 товаров
           </p>
           <p class="product-card__text">
             На&nbsp;самом деле вкусов гораздо больше!
           </p>
-          <a class="product-card__button-more button" href="#">
+          <a class="product-card__button button button--secondary" href="#">
             Показать все
           </a>
         </li>
@@ -323,20 +323,22 @@
       <h2 class="extra-products__title">
         Дополнительные товары
       </h2>
-      <ul class="extra-products__list list-reset">
+      <ul class="extra-products__list">
         <li class="extra-products__item extra-card">
           <a class="extra-card__link" href="#">
             <h3 class="extra-card__title">
               Сахарозаменитель
             </h3>
           </a>
-          <span class="extra-card__parameter">
-            1&nbsp;упаковка (100&nbsp;г)
-          </span>
-          <span class="extra-card__price">
-            200&nbsp;₽
-          </span>
-          <a class="extra-card__button button" href="#">
+          <p class="extra-card__info">
+            <span class="extra-card__parameter">
+              1&nbsp;упаковка (100&nbsp;г)
+            </span>
+            <span class="extra-card__price">
+              200&nbsp;₽
+            </span>
+          </p>
+          <a class="extra-card__button button button--primary" href="#">
             Заказать
           </a>
         </li>
@@ -346,13 +348,15 @@
               Питьевая вода
             </h3>
           </a>
-          <span class="extra-card__parameter">
-            5&nbsp;литров
-          </span>
-          <span class="extra-card__price">
-            50&nbsp;₽
-          </span>
-          <a class="extra-card__button button" href="#">
+          <p class="extra-card__info">
+            <span class="extra-card__parameter">
+              5&nbsp;литров
+            </span>
+            <span class="extra-card__price">
+              50&nbsp;₽
+            </span>
+          </p>
+          <a class="extra-card__button button button--primary" href="#">
             Заказать
           </a>
         </li>
@@ -362,13 +366,15 @@
               Молоко
             </h3>
           </a>
-          <span class="extra-card__parameter">
-            1&nbsp;литр
-          </span>
-          <span class="extra-card__price">
-            100&nbsp;₽
-          </span>
-          <a class="extra-card__button button" href="#">
+          <p class="extra-card__info">
+            <span class="extra-card__parameter">
+              1&nbsp;литр
+            </span>
+            <span class="extra-card__price">
+              100&nbsp;₽
+            </span>
+          </p>
+          <a class="extra-card__button button button--primary" href="#">
             Заказать
           </a>
         </li>
@@ -378,13 +384,15 @@
               Витамины
             </h3>
           </a>
-          <span class="extra-card__parameter">
-            1&nbsp;упаковка (30&nbsp;г)
-          </span>
-          <span class="extra-card__price">
-            300&nbsp;₽
-          </span>
-          <a class="extra-card__button button" href="#">
+          <p class="extra-card__info">
+            <span class="extra-card__parameter">
+              1&nbsp;упаковка (30&nbsp;г)
+            </span>
+            <span class="extra-card__price">
+              300&nbsp;₽
+            </span>
+          </p>
+          <a class="extra-card__button button button--primary" href="#">
             Заказать
           </a>
         </li>
@@ -409,14 +417,14 @@
     <form class="newsletters__form form" action="https://echo.htmlacademy.ru/" method="post">
       <label class="visually-hidden" for="newsletters-user-email">Ваш e-mail</label>
       <input class="form__input" type="email" name="email" id="newsletters-user-email" placeholder="KUKLACHEV@GMAIL.COM" required>
-      <button class="form__button button" type="submit">
+      <button class="form__button button button--primary" type="submit">
         Подписаться
       </button>
     </form>
   </section>
 </main>
 <footer class="footer">
-  <div class="footer__location location">
+  <div class="footer__location location location--accent">
     <h2 class="visually-hidden">
       Наши контакты
     </h2>
@@ -424,7 +432,7 @@
       Приглашаем к сотрудничеству дилеров!
     </p>
     <address class="location__address">
-      ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+      ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
     </address>
     <picture>
       <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpg" srcset="images/desktop/map@1x.jpg 1x, images/desktop/map@2x.jpg 2x">
@@ -438,7 +446,7 @@
     </a>
     <div class="footer-bottom__social social">
       <span class="visually-hidden">Наши соцсети</span>
-      <ul class="social__list list-reset">
+      <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">

@@ -1,0 +1,26 @@
+.results__list {
+  @include list-reset;
+}
+
+.results__title {
+  margin: 0 0 29px;
+  font-family: $font-secondary;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $text-color-secondary;
+}
+
+.results__text {
+  margin: 0 0 38px;
+}
+
+.results__link {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  color: $text-color-secondary;
+  text-transform: uppercase;
+  text-decoration: none;
+}

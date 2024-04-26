@@ -1,0 +1,12 @@
+.main-products__title {
+  margin: 0 0 40px;
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $text-color-secondary;
+}
+
+.main-products__list {
+  @include list-reset;
+}

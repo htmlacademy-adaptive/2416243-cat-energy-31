@@ -23,7 +23,7 @@
         Открыть меню
       </span>
     </button>
-    <ul class="navigation__list list-reset">
+    <ul class="navigation__list">
       <li class="navigation__item navigation__item--current">
         <a class="navigation__link" href="index.html">
           Главная
@@ -44,27 +44,29 @@
 </header>
 <main class="main">
   <section class="hero">
-    <h1 class="hero__title">
-      Функциональное питание для котов
-    </h1>
-    <p class="hero__text">
-      Занялся собой? Займись котом!
-    </p>
-    <picture>
-      <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/desktop/hero-can@1x.png 1x, images/desktop/hero-can@2x.png 2x">
-      <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/tablet/hero-can@1x.png 1x, images/tablet/hero-can@2x.png 2x">
-      <img class="hero__image" width="280" height="270" src="images/mobile/hero-can@1x.png" srcset="images/mobile/hero-can@2x.png 2x" alt="Корм Cat Energy Pro с курицей">
-    </picture>
-    <a class="hero__button button" href="#">
-      Подобрать программу
-    </a>
+    <div class="hero__wrapper">
+      <h1 class="hero__title">
+        Функциональное питание для котов
+      </h1>
+      <p class="hero__text">
+        Занялся собой? Займись котом!
+      </p>
+      <picture>
+        <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/desktop/hero-pro-500-chicken@1x.png 1x, images/desktop/hero-pro-500-chicken@2x.png 2x">
+        <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/tablet/hero-pro-500-chicken@1x.png 1x, images/tablet/hero-pro-500-chicken@2x.png 2x">
+        <img class="hero__image" width="280" height="270" src="images/mobile/hero-pro-500-chicken@1x.png" srcset="images/mobile/hero-pro-500-chicken@2x.png 2x" alt="Корм Cat Energy Pro с курицей">
+      </picture>
+      <a class="hero__button button button--primary" href="#">
+        Подобрать программу
+      </a>
+    </div>
   </section>
   <section class="results">
     <div class="results__wrapper">
       <h2 class="visually-hidden">
         Каких результатов вы хотите добиться?
       </h2>
-      <ul class="results-list list-reset">
+      <ul class="results__list">
         <li class="results__item">
           <h3 class="results__title">
             Похудение
@@ -97,7 +99,7 @@
       <h2 class="features__title">
         Как это работает
       </h2>
-      <ol class="features__list list-reset">
+      <ol class="features__list">
         <li class="features__item">
           <p class="features__text">
             Функциональное питание содержит только полезные питательные вещества.
@@ -123,16 +125,14 @@
   </section>
   <section class="stats">
     <div class="stats__wrapper">
-      <header class="stats__header">
-        <h2 class="stats__title">
-          Живой пример
-        </h2>
-        <p class="stats__info">
-          Борис сбросил 5&nbsp;кг за 2&nbsp;месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек
-          и по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.
-        </p>
-      </header>
+      <h2 class="stats__title">
+        Живой пример
+      </h2>
+      <p class="stats__info">
+        Борис сбросил 5&nbsp;кг за 2&nbsp;месяца, просто заменив свой обычный корм на Cat Energy Slim.
+        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек
+        и по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.
+      </p>
       <dl class="stats__list">
         <div class="stats__item">
           <dt class="stats__weight">
@@ -160,9 +160,7 @@
         </p>
       </div>
     </div>
-  </section>
-  <section class="slider">
-    <div class="slider__wrapper">
+    <div class="stats__slider slider">
       <h2 class="visually-hidden">Сравнение до и после</h2>
       <picture>
         <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/desktop/cat_before@1x.png 1x, images/desktop/cat_before@2x.png 2x">
@@ -189,7 +187,7 @@
       Приглашаем к сотрудничеству дилеров!
     </p>
     <address class="location__address">
-      ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+      ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
     </address>
     <picture>
       <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpg" srcset="images/desktop/map@1x.jpg 1x, images/desktop/map@2x.jpg 2x">
@@ -203,7 +201,7 @@
     </a>
     <div class="footer-bottom__social social">
       <span class="visually-hidden">Наши соцсети</span>
-      <ul class="social__list list-reset">
+      <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">

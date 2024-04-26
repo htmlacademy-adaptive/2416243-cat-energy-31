@@ -1,0 +1,38 @@
+.product-card {
+  & a {
+    text-decoration: none;
+  }
+}
+
+.product-card__link {
+  display: block;
+}
+
+.product-card__title {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $additional-color-2;
+  text-transform: uppercase;
+
+  &--more {
+    color: $additional-color;
+  }
+}
+
+.product-card__parameter {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product-card__value {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product-card__text {
+  font-size: 12px;
+  line-height: 16px;
+}

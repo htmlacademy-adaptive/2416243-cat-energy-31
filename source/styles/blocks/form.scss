@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form__input {
+  padding: 12px 13px;
+  font-family: $font-secondary;
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 400;
+  color: $text-color-primary;
+  text-transform: uppercase;
+  border: 1px solid $bg-color-secondary;
+
+  &::placeholder {
+    color: $text-color-primary;
+  }
+}
+
+.form__button {
+  padding: 15px;
+  font-size: 20px;
+  line-height: 26px;
+}

@@ -1,0 +1,22 @@
+.button {
+  display: block;
+  padding: 10px 20px;
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+
+  &--primary {
+    color: $text-color-third;
+    background-color: $bg-color-primary;
+  }
+
+  &--secondary {
+    color: $text-color-primary;
+    background-color: $bg-color-third;
+  }
+}

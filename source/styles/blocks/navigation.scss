@@ -1,0 +1,15 @@
+.navigation__list {
+  @include list-reset;
+}
+
+.navigation__link {
+  display: block;
+  padding: 22px 10px 24px;
+  font-family: $font-secondary;
+  font-size: 20px;
+  line-height: 20px;
+  color: $text-color-secondary;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
