@@ -1,5 +1,31 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__toggle {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .navigation__list {
   @include list-reset;
+  display: none;
+  background-color: $bg-color-fifth;
+
+
+  &--opened {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    min-width: 100%;
+    display: block;
+    z-index: 1;
+  }
 }
 
 .navigation__link {
@@ -12,4 +38,18 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  border-top: 1px solid $additional-color-10;
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

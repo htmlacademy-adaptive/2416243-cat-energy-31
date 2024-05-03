@@ -1,3 +1,26 @@
 .footer-bottom {
   background-color: $bg-color-third;
 }
+
+.footer-bottom__logo {
+  &::after {
+    display: block;
+    width: 128px;
+    height: 24px;
+    mask: url("../../icons/stack.svg#logo-footer");
+    background-color: $additional-color;
+    content: "";
+  }
+
+  &:hover::after {
+    background-color: $additional-color-11;
+  }
+
+  &:focus-visible::after {
+    background-color: $additional-color-11;
+  }
+
+  &:active::after {
+    background-color: $additional-color-12;
+  }
+}

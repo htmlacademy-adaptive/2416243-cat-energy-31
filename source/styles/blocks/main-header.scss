@@ -1,3 +1,29 @@
 .main-header {
-  font-family: $font-primary; // Стиль-заглушка, чтобы линтер не ругался на пустой файл
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.main-header__logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  text-decoration: none;
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__logo-image {
+  margin-right: 56px;
 }

@@ -14,14 +14,21 @@
 <body class="page__body">
 <header class="main-header">
   <a class="main-header__logo" href="#">
-    <img class="main-header__logo-image" width="33" height="38" src="images/#" alt="Cat Logo">
-    <img class="main-header__logo-text" width="101" height="18" src="images/#" alt="Cat Energy">
+    <picture>
+      <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-image-desktop.svg">
+      <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-image-tablet.svg">
+      <img class="main-header__logo-image" width="33" height="38" src="images/logo-image-mobile.svg" alt="Cat Logo">
+    </picture>
+    <img class="main-header__logo-text" width="101" height="18" src="images/logo-text.svg" alt="Cat Energy">
   </a>
   <nav class="main-header__navigation navigation">
-    <button class="navigation__toggle" type="button">
+    <button class="navigation__toggle menu-button" type="button">
       <span class="visually-hidden">
         Открыть меню
       </span>
+      <span class="menu-button__bar"></span>
+      <span class="menu-button__bar"></span>
+      <span class="menu-button__bar"></span>
     </button>
     <ul class="navigation__list">
       <li class="navigation__item navigation__item--current">
@@ -67,7 +74,7 @@
         Каких результатов вы хотите добиться?
       </h2>
       <ul class="results__list">
-        <li class="results__item">
+        <li class="results__item results__item--slim">
           <h3 class="results__title">
             Похудение
           </h3>
@@ -79,7 +86,7 @@
             Каталог slim
           </a>
         </li>
-        <li class="results__item">
+        <li class="results__item results__item--pro">
           <h3 class="results__title">
             Набор массы
           </h3>
@@ -100,22 +107,22 @@
         Как это работает
       </h2>
       <ol class="features__list">
-        <li class="features__item">
+        <li class="features__item features__item--first">
           <p class="features__text">
             Функциональное питание содержит только полезные питательные вещества.
           </p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--second">
           <p class="features__text">
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--third">
           <p class="features__text">
             Замените один-два приема обычной еды на наше функциональное питание.
           </p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--fourth">
           <p class="features__text">
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </p>
@@ -162,19 +169,22 @@
     </div>
     <div class="stats__slider slider">
       <h2 class="visually-hidden">Сравнение до и после</h2>
-      <picture>
-        <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/desktop/cat_before@1x.png 1x, images/desktop/cat_before@2x.png 2x">
-        <img class="slider__item" width="280" height="256" src="images/mobile/cat_before@1x.png" srcset="images/mobile/cat_before@2x.png 2x" alt="До, упитанный кот">
-      </picture>
-      <picture>
-        <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/desktop/cat_after@1x.png 1x, images/desktop/cat_after@2x.png 2x">
-        <img class="slider__item" width="280" height="256" src="images/mobile/cat_after@1x.png" srcset="images/mobile/cat_after@2x.png 2x" alt="После, худой кот">
-      </picture>
-      <button class="slider__button" type="button">
-        <span class="visually-hidden">
-          Потяните влево вправо, чтобы увидеть разницу до и после
-        </span>
-      </button>
+      <div class="slider__wrapper">
+        <picture>
+          <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/desktop/cat_before@1x.png 1x, images/desktop/cat_before@2x.png 2x">
+          <img class="slider__item slider__item--before" width="280" height="256" src="images/mobile/cat_before@1x.png" srcset="images/mobile/cat_before@2x.png 2x" alt="До, упитанный кот">
+        </picture>
+        <picture>
+          <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/desktop/cat_after@1x.png 1x, images/desktop/cat_after@2x.png 2x">
+          <img class="slider__item slider__item--after" width="280" height="256" src="images/mobile/cat_after@1x.png" srcset="images/mobile/cat_after@2x.png 2x" alt="После, худой кот">
+        </picture>
+        <button class="slider__line" type="button">
+          <span class="visually-hidden">
+            Потяните влево вправо, чтобы увидеть разницу до и после
+          </span>
+          <span class="slider__icon"></span>
+        </button>
+      </div>
     </div>
   </section>
 </main>
@@ -196,9 +206,7 @@
     </picture>
   </div>
   <div class="footer-bottom">
-    <a class="footer-bottom__logo" href="index.html" aria-label="Ведет на главную страницу">
-      <img src="images/#" width="128" height="24" alt="Cat Energy" loading="lazy">
-    </a>
+    <a class="footer-bottom__logo" href="index.html" aria-label="Ведет на главную страницу"></a>
     <div class="footer-bottom__social social">
       <span class="visually-hidden">Наши соцсети</span>
       <ul class="social__list">

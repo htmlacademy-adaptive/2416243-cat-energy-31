@@ -1,3 +1,41 @@
 .social__list {
   @include list-reset;
 }
+
+.social__link {
+  outline: none;
+
+  &--vkontakte {
+    --icon-socail: url("../../icons/stack.svg#vkontakte_icon");
+  }
+
+  &--youtube {
+    --icon-socail: url("../../icons/stack.svg#youtube_icon");
+  }
+
+  &--telegram {
+    --icon-socail: url("../../icons/stack.svg#telegram_icon");
+  }
+
+  &::after {
+    display: block;
+    width: 28px;
+    height: 22px;
+    mask: var(--icon-socail) no-repeat;
+    background-color: $additional-color-5;
+    content: "";
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    background-color: $bg-color-primary;
+  }
+
+  &:focus-visible::after {
+    background-color: $bg-color-primary;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}

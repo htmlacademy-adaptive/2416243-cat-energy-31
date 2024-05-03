@@ -10,6 +10,15 @@
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba($bg-color-primary, 0.85), rgba($bg-color-primary, 0.85)), url("../../images/mobile/offer@2x.jpg");
   }
+
+  &::before {
+    display: block;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../icons/stack.svg#gift_icon");
+    background-repeat: no-repeat;
+    content: "";
+  }
 }
 
 .offer__text {

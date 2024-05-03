@@ -13,15 +13,22 @@
 </head>
 <body class="page__body">
 <header class="main-header">
-  <a class="main-header__logo" href="#">
-    <img class="main-header__logo-image" src="images/#" width="33" height="38" alt="Cat Logo">
-    <img class="main-header__logo-text" src="images/#" width="101" height="18" alt="Cat Energy">
+  <a class="main-header__logo" href="index.html">
+    <picture>
+      <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-image-desktop.svg">
+      <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-image-tablet.svg">
+      <img class="main-header__logo-image" width="33" height="38" src="images/logo-image-mobile.svg" alt="Cat Logo">
+    </picture>
+    <img class="main-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy">
   </a>
-  <nav class="main-header__navigation navigation">
-    <button class="navigation__toggle" type="button">
+  <nav class="main-header__navigation navigation  navigation--closed">
+    <button class="navigation__toggle menu-button" type="button">
       <span class="visually-hidden">
         Открыть меню
       </span>
+      <span class="menu-button__bar"></span>
+      <span class="menu-button__bar"></span>
+      <span class="menu-button__bar"></span>
     </button>
     <ul class="navigation__list">
       <li class="navigation__item">
@@ -304,7 +311,7 @@
             Заказать
           </a>
         </li>
-        <li class="main-products__item product-card">
+        <li class="main-products__item product-card product-card--more">
           <p class="product-card__title product-card__title--more">
             Показать еще 100500 товаров
           </p>
@@ -441,9 +448,7 @@
     </picture>
   </div>
   <div class="footer-bottom">
-    <a class="footer-bottom__logo" href="index.html" aria-label="Ведет на главную страницу">
-      <img src="images/#" width="128" height="24" alt="Cat Energy" loading="lazy">
-    </a>
+    <a class="footer-bottom__logo" href="index.html" aria-label="Ведет на главную страницу"></a>
     <div class="footer-bottom__social social">
       <span class="visually-hidden">Наши соцсети</span>
       <ul class="social__list">
