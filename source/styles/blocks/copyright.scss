@@ -1,11 +1,15 @@
 .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
   font-size: 16px;
   line-height: 20px;
   color: $text-color-primary;
   text-decoration: none;
 
   &::after {
-    display: block;
+    display: inline-block;
     width: 27px;
     height: 34px;
     mask: url("../../icons/stack.svg#logo-html_icon") no-repeat;

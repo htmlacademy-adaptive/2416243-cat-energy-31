@@ -26,3 +26,4 @@ function sliderMouseMove(event) {
 }
 
 slider.addEventListener('mousemove', sliderMouseMove);
+slider.addEventListener('touchmove', sliderMouseMove);

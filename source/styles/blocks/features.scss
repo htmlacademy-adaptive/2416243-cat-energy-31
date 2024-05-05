@@ -1,3 +1,7 @@
+.features {
+  margin-bottom: 49px;
+}
+
 .features__title {
   margin: 0 0 40px;
   font-family: $font-secondary;
@@ -9,11 +13,28 @@
 
 .features__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   counter-reset: num;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+  }
 }
 
 .features__item {
   position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
   color: $text-color-primary;
 
   &--first {
@@ -41,18 +62,38 @@
     background-repeat: no-repeat;
     background-position: center;
     content: "";
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
-  &::after {
-    font-family: $font-secondary;
-    font-size: 280px;
-    line-height: 280px;
-    color: $text-color-fourth;
-    content: counter(num);
-    counter-increment: num;
+  @media (min-width: $tablet-width) {
+    width: 246px;
+    min-height: 280px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 31px;
+    padding-top: 40px;
+    padding-bottom: 57px;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 118px;
+      font-family: $font-secondary;
+      font-size: 280px;
+      line-height: 280px;
+      color: $text-color-fourth;
+      content: counter(num);
+      counter-increment: num;
+      z-index: -1;
+    }
   }
 }
 
 .features__text {
   margin: 0;
+  align-self: center;
 }

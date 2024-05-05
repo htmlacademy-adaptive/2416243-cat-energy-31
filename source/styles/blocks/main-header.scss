@@ -2,6 +2,21 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid $additional-color-13;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    padding-bottom: 0;
+  }
 }
 
 .main-header__logo {
@@ -25,5 +40,23 @@
 }
 
 .main-header__logo-image {
+  display: block;
   margin-right: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 14px;
+  }
+}
+
+.main-header__logo-text {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
 }

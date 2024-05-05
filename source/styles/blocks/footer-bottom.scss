@@ -1,8 +1,27 @@
 .footer-bottom {
-  background-color: $bg-color-third;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
 }
 
 .footer-bottom__logo {
+  display: block;
+  margin-bottom: 20px;
+
   &::after {
     display: block;
     width: 128px;
@@ -23,4 +42,29 @@
   &:active::after {
     background-color: $additional-color-12;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.footer-bottom__social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 20px 0;
+  border-top: 1px solid $additional-color-13;
+  border-bottom: 1px solid $additional-color-13;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+}
+
+.footer-bottom__social .social__list {
+  max-width: 236px;
+  gap: 24px;
 }

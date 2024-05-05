@@ -1,3 +1,7 @@
+.extra-products__wrapper {
+  padding-top: 25px;
+}
+
 .extra-products__title {
   margin: 0 0 36px;
   font-family: $font-secondary;
@@ -9,4 +13,5 @@
 
 .extra-products__list {
   @include list-reset;
+  margin-bottom: 35px;
 }

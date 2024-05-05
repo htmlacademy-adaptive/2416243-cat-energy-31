@@ -1,9 +1,17 @@
+.results {
+  margin-bottom: 20px;
+}
+
 .results__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .results__item {
   position: relative;
+  padding: 30px 33px 18px 20px;
   min-width: 280px;
   min-height: 266px;
   background-color: $bg-color-third;
@@ -30,7 +38,7 @@
 }
 
 .results__title {
-  margin: 0 0 29px;
+  margin: 0 0 29px 90px;
   font-family: $font-secondary;
   font-size: 24px;
   line-height: 37px;
@@ -52,7 +60,7 @@
   text-decoration: none;
 
   &::after {
-    display: block;
+    display: inline-block;
     width: 32px;
     height: 10px;
     background-image: url("../../icons/stack.svg#arrow_icon");

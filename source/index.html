@@ -12,7 +12,7 @@
   <script src="scripts/index.js" defer></script>
 </head>
 <body class="page__body">
-<header class="main-header">
+<header class="main-header page__wrapper">
   <a class="main-header__logo" href="#">
     <picture>
       <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-image-desktop.svg">
@@ -31,18 +31,18 @@
       <span class="menu-button__bar"></span>
     </button>
     <ul class="navigation__list">
-      <li class="navigation__item navigation__item--current">
-        <a class="navigation__link" href="index.html">
+      <li class="navigation__item">
+        <a class="navigation__link navigation__link--index navigation__link--current" href="index.html">
           Главная
         </a>
       </li>
       <li class="navigation__item">
-        <a class="navigation__link" href="catalog.html">
+        <a class="navigation__link navigation__link--index" href="catalog.html">
           Каталог продукции
         </a>
       </li>
       <li class="navigation__item">
-        <a class="navigation__link" href="#">
+        <a class="navigation__link navigation__link--index" href="#">
           Подбор программы
         </a>
       </li>
@@ -51,7 +51,7 @@
 </header>
 <main class="main">
   <section class="hero">
-    <div class="hero__wrapper">
+    <div class="hero__wrapper page__wrapper">
       <h1 class="hero__title">
         Функциональное питание для котов
       </h1>
@@ -69,7 +69,7 @@
     </div>
   </section>
   <section class="results">
-    <div class="results__wrapper">
+    <div class="results__wrapper page__wrapper">
       <h2 class="visually-hidden">
         Каких результатов вы хотите добиться?
       </h2>
@@ -102,7 +102,7 @@
     </div>
   </section>
   <section class="features">
-    <div class="features__wrapper">
+    <div class="features__wrapper page__wrapper">
       <h2 class="features__title">
         Как это работает
       </h2>
@@ -131,7 +131,7 @@
     </div>
   </section>
   <section class="stats">
-    <div class="stats__wrapper">
+    <div class="stats__wrapper page__wrapper">
       <h2 class="stats__title">
         Живой пример
       </h2>
@@ -157,17 +157,17 @@
             затрачено времени
           </dd>
         </div>
-      </dl>
-      <div class="stats__item">
-        <p class="stats__price">
-          Затраты на питание:
-          <span class="stats__number">
+        <div class="stats__total">
+          <dt >
+            Затраты на питание:
+          </dt>
+          <dd class="stats__price">
             15&nbsp;000&nbsp;руб.
-          </span>
-        </p>
-      </div>
+          </dd>
+        </div>
+      </dl>
     </div>
-    <div class="stats__slider slider">
+    <div class="stats__slider slider page__wrapper">
       <h2 class="visually-hidden">Сравнение до и после</h2>
       <div class="slider__wrapper">
         <picture>
@@ -189,23 +189,25 @@
   </section>
 </main>
 <footer class="footer">
-  <div class="footer__location location">
-    <h2 class="visually-hidden">
-      Наши контакты
-    </h2>
-    <p class="location__text">
-      Приглашаем к сотрудничеству дилеров!
-    </p>
-    <address class="location__address">
-      ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
-    </address>
+  <div class="footer__location location location--accent">
+    <div class="location__wrapper page__wrapper">
+      <h2 class="visually-hidden">
+        Наши контакты
+      </h2>
+      <p class="location__text">
+        Приглашаем к сотрудничеству дилеров!
+      </p>
+      <address class="location__address">
+        ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
+      </address>
+    </div>
     <picture>
       <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpg" srcset="images/desktop/map@1x.jpg 1x, images/desktop/map@2x.jpg 2x">
       <source media="(min-width: 768px)" width="768" height="400" type="image/jpg" srcset="images/tablet/map@1x.jpg 1x, images/tablet/map@2x.jpg 2x">
       <img class="location__image" width="320" height="362" src="images/mobile/map@1x.jpg" srcset="images/mobile/map@2x.jpg 2x" alt="Карта с отмеченной локацией" loading="lazy">
     </picture>
   </div>
-  <div class="footer-bottom">
+  <div class="footer-bottom page__wrapper">
     <a class="footer-bottom__logo" href="index.html" aria-label="Ведет на главную страницу"></a>
     <div class="footer-bottom__social social">
       <span class="visually-hidden">Наши соцсети</span>

@@ -1,3 +1,9 @@
+.extra-card {
+  margin-top: -1;
+  border-top: 1px solid $bg-color-secondary;
+  border-bottom: 1px solid $bg-color-secondary;
+}
+
 .extra-card__link {
   text-decoration: none;
 }

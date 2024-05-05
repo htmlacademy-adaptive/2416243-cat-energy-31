@@ -12,7 +12,7 @@
   <script src="scripts/index.js" defer></script>
 </head>
 <body class="page__body">
-<header class="main-header">
+<header class="main-header page__wrapper">
   <a class="main-header__logo" href="index.html">
     <picture>
       <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-image-desktop.svg">
@@ -36,8 +36,8 @@
           Главная
         </a>
       </li>
-      <li class="navigation__item navigation__item--current">
-        <a class="navigation__link" href="catalog.html">
+      <li class="navigation__item">
+        <a class="navigation__link navigation__link--current" href="catalog.html">
           Каталог продукции
         </a>
       </li>
@@ -51,7 +51,7 @@
 </header>
 <main class="main">
   <section class="main-products">
-    <div class="main-products__wrapper">
+    <div class="main-products__wrapper page__wrapper">
       <h1 class="main-products__title">
         Каталог продукции
       </h1>
@@ -63,7 +63,7 @@
           <a class="product-card__link" href="#" tabindex="-1">
             <picture>
               <source media="(min-width: 768px)" width="161" height="172" type="image/png" srcset="images/desktop/pro-500-chicken@1x.png 1x, images/desktop/pro-500-chicken@2x.png 2x">
-              <img width="68" height="87" src="images/mobile/pro-500-chicken@1x.png" srcset="images/mobile/pro-500-chicken@2x.png 2x" alt="Корм Cat Energy PRO 500г с курицей" loading="lazy">
+              <img class="product-card__image" width="68" height="87" src="images/mobile/pro-500-chicken@1x.png" srcset="images/mobile/pro-500-chicken@2x.png 2x" alt="Корм Cat Energy PRO 500г с курицей" loading="lazy">
             </picture>
           </a>
           <a href="#">
@@ -326,7 +326,7 @@
     </div>
   </section>
   <section class="extra-products">
-    <div class="extra-products__wrapper">
+    <div class="extra-products__wrapper page__wrapper">
       <h2 class="extra-products__title">
         Дополнительные товары
       </h2>
@@ -414,7 +414,7 @@
       </div>
     </div>
   </section>
-  <section class="newsletters">
+  <section class="newsletters page__wrapper">
     <h2 class="newsletters__title">
       Акции и новинки
     </h2>
@@ -431,23 +431,25 @@
   </section>
 </main>
 <footer class="footer">
-  <div class="footer__location location location--accent">
-    <h2 class="visually-hidden">
-      Наши контакты
-    </h2>
-    <p class="location__text">
-      Приглашаем к сотрудничеству дилеров!
-    </p>
-    <address class="location__address">
-      ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
-    </address>
+  <div class="footer__location location">
+    <div class="location__wrapper page__wrapper">
+      <h2 class="visually-hidden">
+        Наши контакты
+      </h2>
+      <p class="location__text">
+        Приглашаем к сотрудничеству дилеров!
+      </p>
+      <address class="location__address">
+        ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
+      </address>
+    </div>
     <picture>
       <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpg" srcset="images/desktop/map@1x.jpg 1x, images/desktop/map@2x.jpg 2x">
       <source media="(min-width: 768px)" width="768" height="400" type="image/jpg" srcset="images/tablet/map@1x.jpg 1x, images/tablet/map@2x.jpg 2x">
       <img class="location__image" width="320" height="362" src="images/mobile/map@1x.jpg" srcset="images/mobile/map@2x.jpg 2x" alt="Карта с отмеченной локацией" loading="lazy">
     </picture>
   </div>
-  <div class="footer-bottom">
+  <div class="footer-bottom page__wrapper">
     <a class="footer-bottom__logo" href="index.html" aria-label="Ведет на главную страницу"></a>
     <div class="footer-bottom__social social">
       <span class="visually-hidden">Наши соцсети</span>

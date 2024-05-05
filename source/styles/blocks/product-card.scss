@@ -10,9 +10,30 @@
     background-size: 30px 30px;
     background-position: center 25px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 37px 40px;
+  }
 }
 
 .product-card__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 107px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
+}
+
+.product-card__image {
   display: block;
 }
 

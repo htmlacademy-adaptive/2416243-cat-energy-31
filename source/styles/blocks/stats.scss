@@ -1,5 +1,11 @@
 .stats {
+  padding: 25px 0 40px;
   background-color: $bg-color-forth;
+}
+
+.stats__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .stats__title {
@@ -15,6 +21,24 @@
   margin: 0 0 20px;
 }
 
+.stats__list {
+  margin: 0 auto 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 124px);
+  gap: 20px 32px;
+}
+
+.stats__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
+  border: 1px solid $bg-color-secondary;
+  border-radius: 2px;
+}
+
 .stats__weight {
   font-family: $font-secondary;
   font-size: 24px;
@@ -24,15 +48,29 @@
 }
 
 .stats__text {
+  position: absolute;
+  bottom: -15px;
   margin: 0;
+  max-width: 77px;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
+  text-transform: lowercase;
+  background-color: $bg-color-forth;
 }
 
-.stats__price {
-  margin: 0 0 20px;
+.stats__total {
+  display: flex;
+  justify-content: center;
+  column-gap: 2px;
+  grid-column: span 2;
   font-family: $font-secondary;
   line-height: 20px;
   color: $text-color-secondary;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.stats__price {
+  margin: 0;
 }
