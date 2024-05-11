@@ -6,14 +6,14 @@
   padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding-top: 55px;
     padding-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 66px;
+    padding-top: 69px;
     padding-bottom: 66px;
   }
 }
@@ -50,21 +50,23 @@
 
 .footer-bottom__social {
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  justify-self: center;
   width: 100%;
+  margin-bottom: 20px;
   padding: 20px 0;
   border-top: 1px solid $additional-color-13;
   border-bottom: 1px solid $additional-color-13;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    max-width: 236px;
     margin: 0;
+    padding: 0;
     border: none;
   }
 }
 
 .footer-bottom__social .social__list {
-  max-width: 236px;
   gap: 24px;
 }

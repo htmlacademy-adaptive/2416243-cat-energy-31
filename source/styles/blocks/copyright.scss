@@ -8,6 +8,11 @@
   color: $text-color-primary;
   text-decoration: none;
 
+  @media (min-width: $tablet-width) {
+    justify-self: end;
+    width: 162px;
+  }
+
   &::after {
     display: inline-block;
     width: 27px;

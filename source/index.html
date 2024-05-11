@@ -13,23 +13,22 @@
 </head>
 <body class="page__body">
 <header class="main-header page__wrapper">
-  <a class="main-header__logo" href="#">
-    <picture>
-      <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-image-desktop.svg">
-      <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-image-tablet.svg">
-      <img class="main-header__logo-image" width="33" height="38" src="images/logo-image-mobile.svg" alt="Cat Logo">
-    </picture>
-    <img class="main-header__logo-text" width="101" height="18" src="images/logo-text.svg" alt="Cat Energy">
-  </a>
-  <nav class="main-header__navigation navigation">
-    <button class="navigation__toggle menu-button" type="button">
+  <div class="main-header__wrapper">
+    <a class="main-header__logo" href="#">
+      <picture>
+        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-image-desktop.svg">
+        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-image-tablet.svg">
+        <img class="main-header__logo-image" width="33" height="38" src="images/logo-image-mobile.svg" alt="Cat Logo">
+      </picture>
+      <img class="main-header__logo-text" width="101" height="18" src="images/logo-text.svg" alt="Cat Energy">
+    </a>
+    <button class="main-header__toggle" type="button">
       <span class="visually-hidden">
         Открыть меню
       </span>
-      <span class="menu-button__bar"></span>
-      <span class="menu-button__bar"></span>
-      <span class="menu-button__bar"></span>
     </button>
+  </div>
+  <nav class="main-header__navigation navigation navigation--closed navigation--nojs">
     <ul class="navigation__list">
       <li class="navigation__item">
         <a class="navigation__link navigation__link--index navigation__link--current" href="index.html">
@@ -124,7 +123,7 @@
         </li>
         <li class="features__item features__item--fourth">
           <p class="features__text">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
           </p>
         </li>
       </ol>
@@ -132,80 +131,86 @@
   </section>
   <section class="stats">
     <div class="stats__wrapper page__wrapper">
-      <h2 class="stats__title">
-        Живой пример
-      </h2>
-      <p class="stats__info">
-        Борис сбросил 5&nbsp;кг за 2&nbsp;месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек
-        и по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.
-      </p>
-      <dl class="stats__list">
-        <div class="stats__item">
-          <dt class="stats__weight">
-            5&nbsp;кг
-          </dt>
-          <dd class="stats__text">
-            снижение веса
-          </dd>
-        </div>
-        <div class="stats__item">
-          <dt class="stats__weight">
-            60&nbsp;дней
-          </dt>
-          <dd class="stats__text">
-            затрачено времени
-          </dd>
-        </div>
-        <div class="stats__total">
-          <dt >
-            Затраты на питание:
-          </dt>
-          <dd class="stats__price">
-            15&nbsp;000&nbsp;руб.
-          </dd>
-        </div>
-      </dl>
-    </div>
-    <div class="stats__slider slider page__wrapper">
-      <h2 class="visually-hidden">Сравнение до и после</h2>
-      <div class="slider__wrapper">
-        <picture>
-          <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/desktop/cat_before@1x.png 1x, images/desktop/cat_before@2x.png 2x">
-          <img class="slider__item slider__item--before" width="280" height="256" src="images/mobile/cat_before@1x.png" srcset="images/mobile/cat_before@2x.png 2x" alt="До, упитанный кот">
-        </picture>
-        <picture>
-          <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/desktop/cat_after@1x.png 1x, images/desktop/cat_after@2x.png 2x">
-          <img class="slider__item slider__item--after" width="280" height="256" src="images/mobile/cat_after@1x.png" srcset="images/mobile/cat_after@2x.png 2x" alt="После, худой кот">
-        </picture>
-        <button class="slider__line" type="button">
+      <div class="stats__info">
+        <h2 class="stats__title">
+          Живой пример
+        </h2>
+        <p class="stats__entry">
+          Борис сбросил 5&nbsp;кг за 2&nbsp;месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек
+          и по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.
+        </p>
+        <dl class="stats__list">
+          <div class="stats__item">
+            <dt class="stats__weight">
+              5&nbsp;кг
+            </dt>
+            <dd class="stats__text">
+              снижение веса
+            </dd>
+          </div>
+          <div class="stats__item">
+            <dt class="stats__weight">
+              60&nbsp;дней
+            </dt>
+            <dd class="stats__text">
+              затрачено времени
+            </dd>
+          </div>
+          <div class="stats__total">
+            <dt >
+              Затраты на питание:
+            </dt>
+            <dd class="stats__price">
+              15&nbsp;000&nbsp;руб.
+            </dd>
+          </div>
+        </dl>
+      </div>
+      <div class="stats__slider slider">
+        <h2 class="visually-hidden">Сравнение до и после</h2>
+        <div class="slider__wrapper">
+          <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/desktop/cat_before@1x.png 1x, images/desktop/cat_before@2x.png 2x">
+            <img class="slider__item slider__item--before" width="280" height="256" src="images/mobile/cat_before@1x.png" srcset="images/mobile/cat_before@2x.png 2x" alt="До, упитанный кот">
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/desktop/cat_after@1x.png 1x, images/desktop/cat_after@2x.png 2x">
+            <img class="slider__item slider__item--after" width="280" height="256" src="images/mobile/cat_after@1x.png" srcset="images/mobile/cat_after@2x.png 2x" alt="После, худой кот">
+          </picture>
+          <button class="slider__line" type="button">
           <span class="visually-hidden">
             Потяните влево вправо, чтобы увидеть разницу до и после
           </span>
-          <span class="slider__icon"></span>
-        </button>
+            <span class="slider__icon"></span>
+          </button>
+        </div>
       </div>
     </div>
   </section>
 </main>
 <footer class="footer">
-  <div class="footer__location location location--accent">
-    <div class="location__wrapper page__wrapper">
+  <div class="footer__location location location--accent page__wrapper">
+    <div class="location__wrapper">
       <h2 class="visually-hidden">
         Наши контакты
       </h2>
       <p class="location__text">
-        Приглашаем к сотрудничеству дилеров!
+        Приглашаем к&nbsp;сотрудничеству дилеров!
       </p>
       <address class="location__address">
         ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
       </address>
     </div>
-    <picture>
-      <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpg" srcset="images/desktop/map@1x.jpg 1x, images/desktop/map@2x.jpg 2x">
-      <source media="(min-width: 768px)" width="768" height="400" type="image/jpg" srcset="images/tablet/map@1x.jpg 1x, images/tablet/map@2x.jpg 2x">
-      <img class="location__image" width="320" height="362" src="images/mobile/map@1x.jpg" srcset="images/mobile/map@2x.jpg 2x" alt="Карта с отмеченной локацией" loading="lazy">
-    </picture>
+  </div>
+  <div class="footer__map" id="site-map">
+    <noscript>
+      <picture>
+        <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpg" srcset="images/desktop/map@1x.jpg 1x, images/desktop/map@2x.jpg 2x">
+        <source media="(min-width: 768px)" width="768" height="400" type="image/jpg" srcset="images/tablet/map@1x.jpg 1x, images/tablet/map@2x.jpg 2x">
+        <img class="footer__map-image" width="320" height="362" src="images/mobile/map@1x.jpg" srcset="images/mobile/map@2x.jpg 2x" alt="Карта с отмеченной локацией" loading="lazy">
+      </picture>
+    </noscript>
   </div>
   <div class="footer-bottom page__wrapper">
     <a class="footer-bottom__logo" href="index.html" aria-label="Ведет на главную страницу"></a>

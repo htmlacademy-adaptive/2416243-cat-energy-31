@@ -1,12 +1,8 @@
-.slider {
-  padding: 0 20px;
-}
-
 .slider__wrapper {
   position: relative;
   display: flex;
-  margin: 0 auto;
   max-width: 280px;
+  margin: 0 auto;
 
   @media (min-width: 768px) {
     max-width: 560px;
@@ -41,9 +37,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0;
   width: 4px;
   height: 100%;
+  padding: 0;
   background-color: $additional-color-5;
   border: none;
   border-radius: 2px;

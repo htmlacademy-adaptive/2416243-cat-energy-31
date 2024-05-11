@@ -10,47 +10,47 @@
   border: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
 
-  &--primary {
-    color: $text-color-third;
-    background-color: $bg-color-primary;
+.button--primary {
+  color: $text-color-third;
+  background-color: $bg-color-primary;
 
-    &:hover {
-      background-color: $bg-color-sixth;
-    }
-
-    &:focus-visible {
-      background-color: $bg-color-sixth;
-    }
-
-    &:active {
-      color: rgba($text-color-third, 0.3);
-      background-color: $bg-color-sixth;
-    }
-
-    &:disabled {
-      opacity: 0.3;
-    }
+  &:hover {
+    background-color: $bg-color-sixth;
   }
 
-  &--secondary {
-    color: $text-color-primary;
-    background-color: $bg-color-third;
+  &:focus-visible {
+    background-color: $bg-color-sixth;
+  }
 
-    &:hover {
-      background-color: $bg-color-seventh;
-    }
+  &:active {
+    color: rgba($text-color-third, 0.3);
+    background-color: $bg-color-sixth;
+  }
 
-    &:focus-visible {
-      background-color: $bg-color-seventh;
-    }
+  &:disabled {
+    opacity: 0.3;
+  }
+}
 
-    &:active {
-      background-color: $bg-color-seventh;
-    }
+.button--secondary {
+  color: $text-color-primary;
+  background-color: $bg-color-third;
 
-    &:disabled {
-      opacity: 0.3;
-    }
+  &:hover {
+    background-color: $bg-color-seventh;
+  }
+
+  &:focus-visible {
+    background-color: $bg-color-seventh;
+  }
+
+  &:active {
+    background-color: $bg-color-seventh;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }

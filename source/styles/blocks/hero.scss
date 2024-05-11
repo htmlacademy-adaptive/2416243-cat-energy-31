@@ -7,8 +7,13 @@
     color: $text-color-secondary;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
+
   &::before {
     position: absolute;
+    z-index: -1;
     min-width: 100%;
     min-height: 302px;
     background-image: linear-gradient(rgba($bg-color-primary, 0.85), rgba($bg-color-primary, 0.85)), url("../../images/mobile/hero-background@1x.jpg"), linear-gradient(to right, $additional-color-3, $additional-color-4);
@@ -16,7 +21,6 @@
     background-position: 50% 0;
     background-size: contain;
     background-color: $bg-color-primary;
-    z-index: -1;
     content: "";
 
     @media (min-resolution: 2dppx) {
@@ -48,35 +52,35 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-top: 27px;
   padding-bottom: 20px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
-    min-height: 850px;
-    padding: 40px 30px 0;
+    min-height: 810px;
+    padding-top: 40px;
+    padding-bottom: 0;
     align-items: initial;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 550px;
+    min-height: 580px;
     padding-top: 110px;
-    margin-bottom: 82px;
   }
 }
 
 .hero__title {
-  margin: 0 0 25px;
   max-width: 250px;
+  margin: 0 0 23px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    max-width: 420px;
     margin-left: 90px;
     margin-bottom: 40px;
-    max-width: 420px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -88,7 +92,7 @@
 }
 
 .hero__text {
-  margin: 0 0 29px;
+  margin: 0 0 27px;
   text-transform: uppercase;
   text-align: center;
 
@@ -108,6 +112,7 @@
 
 .hero__image {
   display: block;
+  margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
