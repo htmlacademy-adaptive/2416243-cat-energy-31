@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  font-family: $font-secondary;
+  font-family: $font-secondary, "Arial", sans-serif;
   color: $text-color-third;
 
   @media (min-width: $tablet-width) {

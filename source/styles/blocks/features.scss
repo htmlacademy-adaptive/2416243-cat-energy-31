@@ -12,7 +12,7 @@
 
 .features__title {
   margin: 0 0 40px;
-  font-family: $font-secondary;
+  font-family: $font-secondary, "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -98,7 +98,7 @@
       top: 0;
       left: 118px;
       z-index: -1;
-      font-family: $font-secondary;
+      font-family: $font-secondary, "Arial", sans-serif;
       font-size: 280px;
       line-height: 280px;
       color: $text-color-fourth;

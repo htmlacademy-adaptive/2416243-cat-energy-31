@@ -30,6 +30,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    align-self: flex-start;
     justify-content: unset;
     padding: 56px 42px 42px;
     background-image: linear-gradient(rgba($bg-color-primary, 0.85), rgba($bg-color-primary, 0.85)), url("../../images/mobile/offer@1x.jpg");

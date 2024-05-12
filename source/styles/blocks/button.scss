@@ -1,7 +1,7 @@
 .button {
   display: block;
   padding: 10px 20px;
-  font-family: $font-secondary;
+  font-family: $font-secondary, "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -22,6 +22,8 @@
 
   &:focus-visible {
     background-color: $bg-color-sixth;
+    outline: 2px solid $bg-color-sixth;
+    outline-offset: 2px;
   }
 
   &:active {
@@ -44,6 +46,8 @@
 
   &:focus-visible {
     background-color: $bg-color-seventh;
+    outline: 2px solid $bg-color-seventh;
+    outline-offset: 2px;
   }
 
   &:active {

@@ -27,6 +27,10 @@
     background-color: $bg-color-primary;
   }
 
+  &:focus-visible {
+    outline: none;
+  }
+
   &:focus-visible::after {
     background-color: $bg-color-primary;
   }

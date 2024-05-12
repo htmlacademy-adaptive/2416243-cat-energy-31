@@ -29,10 +29,16 @@
     mask: url("../../icons/stack.svg#logo-footer");
     background-color: $additional-color;
     content: "";
+    transition: all 0.3s ease-in-out;
   }
 
   &:hover::after {
     background-color: $additional-color-11;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $bg-color-sixth;
+    outline-offset: 2px;
   }
 
   &:focus-visible::after {

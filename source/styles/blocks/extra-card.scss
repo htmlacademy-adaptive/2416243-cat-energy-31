@@ -15,7 +15,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 325px 243px 82px auto;
+    grid-template-columns: 315px 233px 72px auto;
+    column-gap: 10px;
     padding: 15px 0 17px;
     align-items: baseline;
     border-left: none;
@@ -23,21 +24,9 @@
   }
 }
 
-.extra-card__link {
-  grid-column: 1/3;
-  display: block;
-  margin-bottom: 13px;
-  text-decoration: none;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 1/2;
-    margin-bottom: 0;
-  }
-}
-
 .extra-card__title {
   margin: 0;
-  font-family: $font-secondary;
+  font-family: $font-secondary, "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -47,6 +36,32 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.extra-card__link {
+  grid-column: 1/3;
+  display: block;
+  margin-bottom: 13px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $bg-color-sixth;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

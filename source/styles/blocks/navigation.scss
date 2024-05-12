@@ -51,7 +51,7 @@
   position: relative;
   display: block;
   padding: 22px 10px 24px;
-  font-family: $font-secondary;
+  font-family: $font-secondary, "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   color: $text-color-secondary;
@@ -67,6 +67,8 @@
 
   &:focus-visible {
     opacity: 0.6;
+    outline: 2px solid $bg-color-sixth;
+    outline-offset: 2px;
   }
 
   &:active {
@@ -102,6 +104,10 @@
   &--index {
     @media (min-width: $desktop-width) {
       color: $text-color-third;
+
+      &:focus-visible {
+        outline-color: $bg-color-fifth;
+      }
     }
   }
 

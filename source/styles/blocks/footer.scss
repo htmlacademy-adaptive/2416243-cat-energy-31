@@ -17,6 +17,19 @@
 
 .footer__map-image {
   display: block;
+  width: 320px;
+  height: 362px;
+  object-fit: contain;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 400px;
+  }
 }
 
 .footer__map-icon {

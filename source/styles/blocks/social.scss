@@ -35,6 +35,7 @@
 
   &:focus-visible::after {
     background-color: $bg-color-primary;
+    outline: none;
   }
 
   &:active::after {

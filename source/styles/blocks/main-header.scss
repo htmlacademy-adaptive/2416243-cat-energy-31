@@ -47,6 +47,8 @@
 
   &:focus-visible {
     opacity: 0.8;
+    outline: 2px solid $bg-color-sixth;
+    outline-offset: 2px;
   }
 
   &:active {

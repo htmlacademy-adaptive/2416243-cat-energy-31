@@ -111,10 +111,29 @@
   }
 }
 
+.product-card__info a {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible > .product-card__title {
+    outline: 2px solid $bg-color-sixth;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .product-card__title {
   max-width: 76px;
   margin: 0 0 14px;
-  font-family: $font-secondary;
+  font-family: $font-secondary, "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;

@@ -43,9 +43,23 @@
   background-color: $additional-color-5;
   border: none;
   border-radius: 2px;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     background-color: $bg-color-primary;
+
+    .slider__icon {
+      border-color: $bg-color-primary;
+
+      &::after {
+        background-color: $bg-color-primary;
+      }
+    }
+  }
+
+  &:focus-visible {
+    background-color: $bg-color-primary;
+    outline: none;
 
     .slider__icon {
       border-color: $bg-color-primary;

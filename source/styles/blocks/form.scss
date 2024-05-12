@@ -1,12 +1,13 @@
 .form__input {
   padding: 12px 13px;
-  font-family: $font-secondary;
+  font-family: $font-secondary, "Arial", sans-serif;
   font-size: 20px;
   line-height: normal;
   font-weight: 400;
   color: $text-color-primary;
   text-transform: uppercase;
   border: 1px solid $additional-color-7;
+  transition: all 0.3s ease-in-out;
 
   &::placeholder {
     color: $text-color-primary;
@@ -16,16 +17,13 @@
     border-color: $bg-color-secondary;
   }
 
-  &:focus-visible {
-    border-color: $bg-color-secondary;
-  }
-
+  &:focus-visible,
   &:focus-visible:not(:placeholder-shown) {
     outline: 2px solid $additional-color-8;
   }
 
   &--error {
-    outline: $additional-color-9;
+    outline: 2px solid $additional-color-9;
   }
 }
 

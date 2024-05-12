@@ -9,6 +9,8 @@
   <link rel="icon" href="favicon.ico">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="fonts/lato/lato-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswald-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
 </head>
 <body class="page__body">
@@ -58,6 +60,9 @@
         Занялся собой? Займись котом!
       </p>
       <picture>
+        <source media="(min-width: 1440px)" width="552" height="499" type="image/webp" srcset="images/desktop/hero-pro-500-chicken@1x.webp 1x, images/desktop/hero-pro-500-chicken@2x.webp 2x">
+        <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="images/tablet/hero-pro-500-chicken@1x.webp 1x, images/tablet/hero-pro-500-chicken@2x.webp 2x">
+        <source width="280" height="270" type="image/webp" srcset="images/mobile/hero-pro-500-chicken@1x.webp 1x, images/mobile/hero-pro-500-chicken@2x.webp 2x">
         <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/desktop/hero-pro-500-chicken@1x.png 1x, images/desktop/hero-pro-500-chicken@2x.png 2x">
         <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/tablet/hero-pro-500-chicken@1x.png 1x, images/tablet/hero-pro-500-chicken@2x.png 2x">
         <img class="hero__image" width="280" height="270" src="images/mobile/hero-pro-500-chicken@1x.png" srcset="images/mobile/hero-pro-500-chicken@2x.png 2x" alt="Корм Cat Energy Pro с курицей">
@@ -171,10 +176,14 @@
         <h2 class="visually-hidden">Сравнение до и после</h2>
         <div class="slider__wrapper">
           <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/desktop/cat_before@1x.webp 1x, images/desktop/cat_before@2x.webp 2x">
+            <source width="280" height="256" type="image/webp" srcset="images/mobile/cat_before@1x.webp 1x, images/mobile/cat_before@2x.webp 2x">
             <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/desktop/cat_before@1x.png 1x, images/desktop/cat_before@2x.png 2x">
             <img class="slider__item slider__item--before" width="280" height="256" src="images/mobile/cat_before@1x.png" srcset="images/mobile/cat_before@2x.png 2x" alt="До, упитанный кот">
           </picture>
           <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/desktop/cat_after@1x.webp 1x, images/desktop/cat_after@2x.webp 2x">
+            <source width="280" height="256" type="image/webp" srcset="images/mobile/cat_after@1x.webp 1x, images/mobile/cat_after@2x.webp 2x">
             <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/desktop/cat_after@1x.png 1x, images/desktop/cat_after@2x.png 2x">
             <img class="slider__item slider__item--after" width="280" height="256" src="images/mobile/cat_after@1x.png" srcset="images/mobile/cat_after@2x.png 2x" alt="После, худой кот">
           </picture>
@@ -206,6 +215,9 @@
   <div class="footer__map" id="site-map">
     <noscript>
       <picture>
+        <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp" srcset="images/desktop/map@1x.webp 1x, images/desktop/map@2x.webp 2x">
+        <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="images/tablet/map@1x.webp 1x, images/tablet/map@2x.webp 2x">
+        <source width="320" height="362" type="image/webp" srcset="images/mobile/map@1x.webp 1x, images/mobile/map@2x.webp 2x">
         <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpg" srcset="images/desktop/map@1x.jpg 1x, images/desktop/map@2x.jpg 2x">
         <source media="(min-width: 768px)" width="768" height="400" type="image/jpg" srcset="images/tablet/map@1x.jpg 1x, images/tablet/map@2x.jpg 2x">
         <img class="footer__map-image" width="320" height="362" src="images/mobile/map@1x.jpg" srcset="images/mobile/map@2x.jpg 2x" alt="Карта с отмеченной локацией" loading="lazy">
