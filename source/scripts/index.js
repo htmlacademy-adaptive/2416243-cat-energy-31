@@ -11,7 +11,7 @@ const subscribeButton = document.querySelector('.form__button');
 const emailInput = document.querySelector('.form__input');
 /* eslint-disable */
 const mapLocation = L.map('site-map').setView([59.9383496968133, 30.322116673359545], 18);
-const myIcon = L.icon({className: 'footer__map-icon', iconUrl: './../vendor/leaflet/map-pin.png'});
+const myIcon = L.icon({className: 'footer__map-icon', iconUrl: 'vendor/leaflet/map-pin.png'});
 const locationMarker = L.marker([59.93878233419091, 30.32281404770163], {icon: myIcon}).addTo(mapLocation);
 const mapLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 20,
