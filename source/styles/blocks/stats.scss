@@ -92,7 +92,7 @@
 .stats__list {
   display: grid;
   grid-template-columns: repeat(2, 124px);
-  gap: 35px 32px;
+  gap: 33px 32px;
   margin: 0 auto 20px;
 
   @media (min-width: $tablet-width) {
